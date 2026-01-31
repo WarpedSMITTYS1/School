@@ -1,0 +1,32 @@
+.container {
+    display: flex; /* or grid */
+    justify-content: space-between; /* Helps separate content and sidebar */
+    /* Ensure the container has height or is naturally tall with content */
+}
+
+.main-content {
+    width: 70%; /* Adjust width as needed */
+    /* Add padding/margin as needed */
+}
+
+.sidebar {
+    width: 25%; /* Adjust width as needed */
+    /* Add padding/margin as needed */
+}
+
+.sticky-box {
+    position: sticky; /* Make the element sticky */
+    top: 20px; /* The point in the viewport where it becomes sticky (e.g., 20px from the top) */
+    right: 0; /* Align to the right within its parent .sidebar */
+    
+    /* Optional: styling for appearance */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Add a class for when the element is stuck, if you want visual changes (requires JavaScript) */
+.is-sticky {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
